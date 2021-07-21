@@ -1,0 +1,175 @@
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css"></link>
+
+
+
+
+
+<head>
+	<img id="l1" src="images/Group 20399.svg" height="52px" width="289px"></img>
+	<img id="l2" src="images/logo.svg" height="50px" width="235px"></img>
+</head>
+
+<body>
+
+
+<h3>Invoice List</h3>
+<div id="tb">
+<table class="table">
+
+	<input id="search" type="text" placeholder="Search by Invoice Number"><img id="si" src="images\Symbol 129 – 1.svg"/></input>
+
+   	<button class="button btn1" data-toggle="modal" data-target="#delModal" id="delBtn">- Delete</button>
+   	<button class="button btn2" data-toggle="modal" data-target="#editModal" id="editModalBtn" onclick="edit()">! Edit</i></button>
+   	<button class="button btn3" data-toggle="modal" data-target="#myModal" id="addModalBtn">+ Add</button>
+   	
+
+   	
+   
+    <tr  class="bg-info" id="header">
+    	<th><input type="hidden" id="c_h"></input></th>
+        <th>Customer Name</th>
+        <th>Customer #</th>
+        <th>Invoice #</th>
+        <th>Invoice Amount</th>
+        <th>Due Date</th>
+        <th>Predicted Payment Date</th>
+        <th>Notes</th>
+    </tr>
+
+    <tbody id="myTable">
+        
+    </tbody>
+
+    
+</table>
+
+
+<div class="modal fade" id="myModal"  role="dialog">
+<div class="modal-content">
+	<div class="modal-header" id="mh">
+		<h5 class="modal-title" id="mt">Add Invoice</h5>
+		<button type="button" class="close" id="x" data-dismiss="modal"></button>	
+		
+	</div>
+	<div class="modal-body" id="mb">
+        <form id="addForm" action="add" method="get">
+<p><label for="cname" id="cname">Customer Name<strong style="color:red;">*</strong></label>
+<input type="text" class= "input inp" id="cninp" name="cname"> </input> 
+<label class="label dlb" for="date" id="date">Due Date<strong style="color:red;">*</strong></label><input id = "dinp" type="date" name="date"></input>
+</p><br>
+<p><label for="cn" id="cno">Customer No<strong style="color:red;">*</strong></label>
+<input type="text" class= "input inp" id="cnoinp" name="cno"> </input>
+
+<label class="label note" id="note">Notes</label><input type="text" id="noteinp" name="note" value=" "></input>
+</input></p><br>
+<p><label for="invno" id="invno">Invoice No<strong style="color:red;">*</strong></label><input type="text" class= "input inp" id="invnoinp" name="invno"> 
+
+</input></p><br>
+<p><label for="invamt" id="invamt">Invoice Amount<strong style="color:red;">*</strong></label>
+<input type="text" class= "input inp" id="invamtinp" name="invamt"> 
+
+</input></p><br>
+
+
+          </form>
+      </div>
+      
+      <div class="modal-footer mf">
+      <div>
+      	<button type="button" class="btn cancelBtn"  data-dismiss="modal">Cancel</button>
+      	</div>
+      	<div>
+      	<button type="submit" form="addForm" class="btn btn-secondary" id="addSubmit" disabled=true onclick="searchData()">Add</button>
+      	<button type="button" class="btn btn-primary" onclick="clearFields()" >Clear</button>
+        
+        </div>
+     </div>
+	
+	
+</div>
+
+
+</div>
+
+<div class="modal fade" id="editModal"  role="dialog">
+<div class="modal-content">
+	<div class="modal-header" id="edmh">
+		<h5 class="modal-title" id="edmt">Edit Invoice</h5>
+		<button type="button" class="close" id="ex" data-dismiss="modal"></button>	
+		
+	</div>
+	<div class="modal-body" id="edmb">
+	<form id="editForm" action="edit" method="get">
+        <p><label id="edinvamt">Invoice Amount</label><input type="text" id="edinp1" name="edinp1"></input></p>
+        <p><label id="ednotes">Notes</label><input type="text" id="edinp2" name="edinp2"></input></p>
+        <input type="hidden" name="edinp3" id="identEd"></input>
+        
+       </form>
+      </div>
+      
+      <div class="modal-footer edmf">
+      <div>
+      	<button type="button" class="btn edcancelbtn"  data-dismiss="modal">Cancel</button>
+      	</div>
+      	<div>
+      	<button type="submit" class="btn edbtn-secondary" form="editForm" id="edSub">Save</button>
+      	<button type="button" class="btn edbtn-primary" onclick="resetFields()">Reset</button>
+      
+        </div>
+     </div>
+	
+	
+</div>
+
+
+</div>
+
+
+
+<div class="modal fade" id="delModal"  role="dialog">
+<div class="modal-content">
+	<div class="modal-header" id="dmh">
+		<h5 class="modal-title" id="dmt">Delete record(s)?</h5>
+		<button type="button" class="close" id="dx" data-dismiss="modal"></button>	
+		
+	</div>
+	
+	<div class="modal-body" id="dmb">
+	<form action="Delete" method="get" id="delForm"><input type="hidden" name="delRows" id="delInp"></input></form>
+        <p style="color:#C0C6CA;">You'll lose your record(s) after this action. We can't recover them once you delete.</p><br><br>
+        <p style="color:#C0C6CA;"> Are you sure you want to <strong style="color:#FF5E5E;">permanently delete</strong> them?</p>
+        
+      </div>
+      </div>
+      <div class="modal-footer dmf">
+      
+      	<button type="button" class="btn dbtn-secondary" style="color:white;" data-dismiss="modal" >Cancel</button>
+      	<button type="submit" class="btn dbtn-primary" form="delForm" style="color:white;" onclick="del()">Delete</button>
+        
+        </div>
+	
+	
+</div>
+
+<p>	
+<button class="button scrollRight" onclick="inc()" style="margin-left:2000px;" id="inc"> > </button>
+<button class="button scrollLeft"  onclick="dec()" id="dec" disabled=true> < </button>
+	</p>
+	
+
+
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
+
+
+

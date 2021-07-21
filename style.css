@@ -1,0 +1,725 @@
+
+ 
+ 
+ body{
+	background-color:#58687E;
+	margin-left:50px;
+	margin-right:30px;
+	height:1000px;
+}   
+
+    #l1{
+    	margin-left:30px;
+    	margin-top:16px;
+    } 
+    #l2{
+    	margin-left:643px;
+    	margin-top:22px;
+    }
+    th{
+    
+    background-color:#223746;
+    color:#97A1A9;
+    border-top:2px solid #39495E;
+    
+    }
+    
+    th,td{ 
+         
+  	text-align: left;
+  	padding: 8px;
+  	border-bottom: 2px solid #39495E;
+  	
+  	
+  
+            }
+     tr{
+     color:white;
+     border-top:1px solid #39495E;
+     border-bottom: 0px;
+     
+     
+     }
+     tr:nth-child(even) {
+  
+  	background:#39495E  0% 0% no-repeat padding-box;
+}
+	
+    #tb{
+	top: 160px;
+	left: 40px;
+	width: 1860px;
+	height:800px;
+	border:0px;
+	background: #273D49CC 0% 0% no-repeat padding-box;
+	border-radius: 10px;
+	opacity: 1;
+	font-family: arial, sans-serif;
+  	border-collapse: collapse;
+  	width: 100%;
+  	float:right;
+  	
+    	
+    }  
+    h3{
+    	margin-top:40px;
+    	margin-left:5px;
+    	margin-bottom:20px;
+     	top: 100px;
+	left: 30px;
+	width: 141px;
+	height: 31px;
+	text-align: left;
+	font: normal normal normal 28px/32px Ubuntu;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+    }
+    #search{
+    	float:right;
+    	margin-top:20px;
+    	margin-bottom:20px;
+    	margin-right:30px;
+    	height: 45px;
+    	width:340px;
+	background: #283A46 0% 0% no-repeat padding-box;
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;
+	color:white;
+	
+    }
+    button{
+    	float:right;
+    	background:#273D49CC;
+    	color:white;
+    	margin-top:20px;
+    	margin-bottom:20px;
+    	margin-right:50px;
+    }
+    .btn1{
+    top: 191px;
+left: 1136px;
+width: 99px;
+height: 45px;
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+    }
+    .btn2{
+    top: 191px;
+left: 1255px;
+width: 102px;
+height: 45px;
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+    }
+    .btn3{
+    top: 191px;
+left: 1377px;
+width: 123px;
+height: 45px;
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+    }
+
+
+
+.mhead{
+	
+	color:white;
+	background-color:#2A3E4C;
+	width:1106px;
+	
+}
+.mbody{
+	
+	background-color:#2A3E4C;
+	
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0.19px;
+	color: #97A1A9;
+	width:1106px;
+}
+.mfoot{
+	background-color:#2A3E4C;
+	width:1106px;
+	
+}
+
+form{
+	display:table;
+	
+}
+p{
+	display:table-row;
+	
+}
+label{
+	display:table-cell;
+	
+}
+#myModal{
+
+top: 211px;
+left: 407px;
+width: 1106px;
+height: 509px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+}
+#mh{
+
+border-bottom:2px solid #1A262F;
+top: 211px;
+left: 407px;
+width: 1106px;
+height: 91px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+border-radius: 10px 10px 0px 0px;
+opacity: 1;
+}
+#mt{
+top: 241px;
+left: 437px;
+width: 147px;
+height: 31px;
+text-align:left;
+font: normal normal normal 28px/32px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: capitalize;
+opacity: 1;
+}
+#x{
+top: 244px;
+left: 1459px;
+width: 24px;
+height: 24px;
+background: transparent url('baseline-close-24px.svg') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.mf{
+border-top:2px solid #1A262F;
+top: 641px;
+left: 458px;
+width: 1106px;
+height: 110px;
+opacity: 1;
+background:#2A3E4C 0% 0% no-repeat padding-box;
+
+}
+
+#mb{
+border-top:1px solid #1A262F;
+border-bottom:1px solid #1A262F;
+width:1106px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+}
+.btn-primary{
+top: 651px;
+left: 1294px;
+width: 87px;
+height: 45px;
+border: 1px solid #14AFF1;
+border-radius: 10px;
+opacity: 1;
+}
+.btn-secondary{
+top: 651px;
+left: 1406px;
+width: 77px;
+height: 45px;
+background: #97A1A9 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+}
+
+
+#cname{
+top: 342px;
+left: 437px;
+width: 163px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+opacity: 1;
+color: #97A1A9;
+}
+#cninp{
+color: #97A1A9;
+top: 332px;
+left: 620px;
+width: 300px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+}
+#cno{
+color: #97A1A9;
+top: 415px;
+left: 437px;
+width: 141px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+opacity: 1;
+}
+#cnoinp{
+color: #97A1A9;
+top: 405px;
+left: 620px;
+width: 300px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+}
+#date{
+color: #97A1A9;
+top: 342px;
+left: 1000px;
+width: 101px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+opacity: 1;
+}
+#dinp{
+color: #97A1A9;
+top: 332px;
+left: 1183px;
+width: 300px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+float:right;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+}
+
+#note{
+top: 416px;
+left: 1000px;
+width: 55px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #97A1A9;
+opacity: 1;
+}
+#noteinp{
+top: 390px;
+left: 993px;
+width: 300px;
+height: 165px;
+z-index:3;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+color: #97A1A9;
+position:fixed;
+}
+
+#invno{
+color: #97A1A9;
+top: 488px;
+left: 437px;
+width: 116px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+opacity: 1;
+}
+#invnoinp{
+color: #97A1A9;
+top: 478px;
+left: 620px;
+width: 300px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+}
+#invamt{
+color: #97A1A9;
+top: 561px;
+left: 437px;
+width: 159px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+opacity: 1;
+}
+#invamtinp{
+color: #97A1A9;
+top: 551px;
+left: 620px;
+width: 300px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+}
+
+
+.cancelBtn{
+top: 642px;
+left: 458px;
+width: 60px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #14AFF1;
+opacity: 1;
+position:fixed;
+}
+
+#editModal{
+top: 210px;
+left: 689px;
+width: 543px;
+height: 511px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+}
+
+#edmh{
+
+top: 210px;
+left: 689px;
+width: 543px;
+height: 91px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+border-radius: 10px 10px 0px 0px;
+opacity: 1;
+position:fixed;
+}
+#edmt{
+top: 270px;
+left: 719px;
+width: 146px;
+height: 31px;
+text-align: left;
+font: normal normal normal 28px/32px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: capitalize;
+opacity: 1;
+position:fixed;
+}
+#ex{
+top: 273px;
+left: 1178px;
+width: 24px;
+height: 24px;
+background: transparent url('images/baseline-close-24px.svg') 0% 0% no-repeat padding-box;
+opacity: 1;
+position:fixed;
+}
+#edmb{
+width:543px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+}
+
+#edinvamt{
+top: 341px;
+left: 719px;
+width: 144px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #97A1A9;
+opacity: 1;
+position:fixed;
+}
+#ednotes{
+top: 415px;
+left: 719px;
+width: 55px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #97A1A9;
+opacity: 1;
+position:fixed;
+}
+
+#edinp1{
+top: 331px;
+left: 883px;
+width: 319px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #FFFFFF;
+position:fixed;
+
+}
+#edinp2{
+top: 404px;
+left: 883px;
+width: 319px;
+height: 191px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #FFFFFF;
+position:fixed;
+}
+
+.edcancelbtn{
+top: 663px;
+left: 740px;
+width: 60px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #14AFF1;
+opacity: 1;
+position:fixed;
+}
+.edbtn-primary{
+top: 652px;
+left: 1003px;
+width: 92px;
+height: 45px;
+border: 1px solid #14AFF1;
+border-radius: 10px;
+opacity: 1;
+color:white;
+position:fixed;
+}
+.edbtn-secondary{
+top: 652px;
+left: 1140px;
+width: 62px;
+height: 43px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+background:#14AFF1 0% 0% no-repeat padding-box;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+position:fixed;
+}
+
+.edmf{
+top: 642px;
+left: 740px;
+width: 483px;
+height: 67px;
+opacity: 1;
+position:fixed;
+}
+#delModal{
+top: 294px;
+left: 654px;
+width: 611px;
+height: 300px;
+background: #2A3F4D 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+overflow:hidden;
+}
+#dmh{
+top: 354px;
+left: 654px;
+width: 605px;
+height: 41px;
+opacity: 1;
+background-color:#2A3E4C;
+border-bottom:1px solid #1A262F;
+}
+#dmt{
+top: 324px;
+left: 684px;
+width: 217px;
+height: 31px;
+text-align: left;
+font: normal normal normal 28px/32px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+#dmb{
+width:611px;
+border-bottom:1px solid #1A262F;
+border-top:1px solid #1A262F;
+background-color:#2A3E4C;
+font: normal normal normal 20px/24px Ubuntu;
+}
+#dx{
+top: 327px;
+left: 1211px;
+width: 24px;
+height: 24px;
+background: transparent url('images/baseline-close-24px.svg') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.dbtn-secondary{
+top: 566px;
+left: 1009px;
+width: 100px;
+height: 45px;
+background: #2C404E 0% 0% no-repeat padding-box;
+border: 1px solid #14AFF1;
+border-radius: 10px;
+opacity: 1;
+}
+.dbtn-primary{
+top: 566px;
+left: 1134px;
+width: 101px;
+height: 45px;
+background: #14AFF1 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+}
+
+.dmf{
+border-top:1px solid #1A262F;
+
+}
+
+
+.scrollRight{
+top: 514px;
+left: 200px;
+width: 55px;
+height: 55px;
+background: #14AFF1 0% 0% no-repeat padding-box;
+box-shadow: 0px 2px 6px #00000069;
+opacity: 1;
+position:absolute;
+z-index:2;
+border-radius:40%;
+}
+.scrollLeft{
+	
+	top: 514px;
+left: 1px;
+width: 55px;
+height: 55px;
+background: #39495E 0% 0% no-repeat padding-box;
+box-shadow: 0px 2px 6px #00000069;
+opacity: 1;
+position:absolute;
+z-index:2;
+border-radius:40%;
+}
+
+#c_h{
+width: 16px;
+height: 16px;
+border: 2px solid #97A1A9;
+border-radius: 3px;
+opacity: 1;
+}
+#err1{
+	
+	top: 536px;
+left: 832px;
+width: 257px;
+height: 25px;
+text-align: center;
+font: normal normal normal 22px/28px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+#err2{
+	top: 576px;
+left: 728px;
+width: 464px;
+height: 18px;
+text-align: center;
+font: normal normal normal 16px/24px Ubuntu;
+letter-spacing: 0px;
+color: #C0C6CA;
+opacity: 1;
+}
+#error{
+	margin-left:850px;
+	margin-top:300px;
+	top: 482px;
+left: 728px;
+width: 464px;
+height: 165px;
+opacity: 1;
+background: transparent url('images/error_outline-24px.png') 0% 0% no-repeat padding-box;
+
+}
+#errorBtn{
+	top: 624px;
+left: 905px;
+width: 163px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/32px Ubuntu;
+letter-spacing: 0px;
+color: #14AFF1;
+opacity: 1;
+float:left;
+margin-left:130px;
+}
+#erimg{
+	position:fixed;
+	top: 545px;
+left: 1050px;
+width: 39px;
+height: 39px;
+}
+#si{
+	top: 189px;
+left: 2200px;
+width: 32px;
+height: 32px;
+opacity: 1;
+position:fixed;
+}
+
+
+
+
+
+
+
+
+    
+    
